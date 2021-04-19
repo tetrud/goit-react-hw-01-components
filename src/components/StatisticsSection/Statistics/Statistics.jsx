@@ -11,6 +11,10 @@ const Statistics = ({ title, stats }) => {
   );
 };
 
+Statistics.defaultProps = {
+  title: 'title not found',
+};
+
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
